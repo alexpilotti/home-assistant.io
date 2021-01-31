@@ -76,7 +76,7 @@ database:
   default: home_assistant
 verify_ssl:
   type: boolean
-  description: 1.xx only - Verify SSL certificate for HTTPS request. For 2.xx SSL verification is required, library provides no way to disable it.
+  description: 1.xx only - Verify SSL certificate for HTTPS request. For 2.xx SSL verification is required, library provides no way to disable it. This can take on boolean values `false` or `true` or you can pass a location on the device where a certificate can be used for verification e.g., `/etc/ssl/ca.pem`.
   required: false
   default: true
 token:
